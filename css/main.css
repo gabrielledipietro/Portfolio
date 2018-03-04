@@ -17,6 +17,22 @@
   grid-gap: 40px;
 }
 
+.gridpages {
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+  grid-gap: 20px;
+}
+
+.textleft {
+  font-family: "Maison Neue", sans-serif;
+  line-height: 1.6;
+  /* when fixed it messes up */
+  /* position: fixed; */
+  text-decoration: none;
+  padding-top: 150px;
+  padding-left: 50px;
+}
+
 /* styling for header/links */
 .header {
   font-family: "Tiempos Headline", sans-serif;
@@ -79,6 +95,7 @@ a:active {
 .spacetop {
   /* padding-right: 50px; */
   padding-left: 50px;
+  position: relative;
   /* display: inline-block; */
 }
 
@@ -107,6 +124,20 @@ a:active {
   margin-left: auto;
   margin-right: auto;
   padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  /* padding-bottom: 1000px; */
+}
+
+/* for the work pages */
+.artonpage {
+  width: 400px;
+
+  /* padding-left: 8px; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 120px;
   padding-right: 20px;
   padding-bottom: 50px;
   /* padding-bottom: 1000px; */
