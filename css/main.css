@@ -1,0 +1,125 @@
+/* ========================================
+ * CSS written here will override Tachyons
+ * ======================================== */
+
+/* @font-face {
+  font-family: "Tiempos";
+  src: url(Tiempos Headline-Semibold.otf) format("opentype");
+} */
+.background {
+  background-color: #dcdee2;
+  background-size: cover;
+}
+
+.gridhead {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 40px;
+}
+
+/* styling for header/links */
+.header {
+  font-family: "Tiempos Headline", sans-serif;
+  padding-left: 40px;
+  /* padding-right: 40px; */
+  padding-top: 20px;
+  color: #7e38ff;
+
+  position: fixed;
+
+  /* width: 700px; */
+}
+
+/* span {
+  white-space: normal;
+} */
+
+.header h1 {
+  font-size: 35pt;
+  color: #7e38ff;
+  margin: 0;
+  line-height: 1.1;
+  padding-bottom: 30px;
+  white-space: nowrap;
+}
+
+.header p {
+  font-family: "Maison Neue", sans-serif;
+  line-height: 1.6;
+}
+
+/* unvisited link */
+a:link {
+  color: #7e38ff;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: #7e38ff;
+  text-decoration: underline;
+}
+
+/* mouse over link */
+a:hover {
+  color: pink;
+  text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+  text-decoration: underline;
+}
+
+.underline {
+  text-decoration: underline;
+  display: inline;
+}
+
+.spacetop {
+  /* padding-right: 50px; */
+  padding-left: 50px;
+  /* display: inline-block; */
+}
+
+/* .endabout {
+  display: inline-block;
+  padding-right: 50px;
+} */
+
+/* styling for header/links */
+
+.gridhome {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr;
+  grid-gap: 20px;
+  padding-top: 100px;
+
+  /* padding-left: 50px;
+  padding-right: 50px; */
+}
+
+.art {
+  width: 240px;
+  padding-bottom: 30px;
+  /* padding-left: 8px; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  /* padding-bottom: 1000px; */
+}
+
+.artsmall {
+  width: 150px;
+  padding-bottom: 30px;
+  /* padding-left: 8px; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+}
