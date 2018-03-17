@@ -8,57 +8,7 @@
 } */
 /* not doing anything at the moment */
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding-top: 20px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-li {
-  display: inline;
-  /* padding-left: 40px; */
-  padding-right: 35px;
-}
-
-.background {
-  background-color: #dcdee2;
-  background-size: cover;
-}
-
-.gridpages {
-  display: grid;
-  grid-template-columns: 3fr 4fr 2fr;
-  grid-gap: 20px;
-}
-
-.textleft {
-  font-family: "Maison Neue", sans-serif;
-  line-height: 1.6;
-  /* position: fixed; */
-  padding-top: 150px;
-  padding-left: 70px;
-}
-
-.textright {
-  font-family: "Maison Neue", sans-serif;
-  font-size: 8pt;
-  line-height: 1.6;
-  /* when fixed it messes up */
-  /* position: fixed; */
-  /* position: fixed; */
-  padding-top: 150px;
-  padding-right: 70px;
-
-  /* position: fixed; */
-}
-
-.textright li {
-  display: block;
-}
-
-/* styling for header/links */
+/* styling for header/links NEED THE z-index because the links were in the back */
 .header {
   font-family: "Tiempos Headline", sans-serif;
   padding-top: 20px;
@@ -66,17 +16,54 @@ li {
   display: block;
   position: fixed;
   /* padding-left:  */
-
+  margin-bottom: 100px;
   /* width: 700px; */
+  z-index: 9999;
 }
 
 .header h1 {
-  font-size: 35pt;
+  font-size: 15pt;
   color: #7e38ff;
   margin: 0;
   line-height: 1.1;
   padding-bottom: 30px;
-  white-space: nowrap;
+  /* white-space: nowrap; */
+}
+
+/* @media (min-width: 450px) {
+  .header h1 {
+    padding-left: 30px;
+  }
+} */
+
+@media (min-width: 600px) {
+  .header h1 {
+    font-size: 20pt;
+  }
+}
+
+@media (min-width: 1050px) {
+  .header h1 {
+    font-size: 25pt;
+  }
+}
+
+@media (min-width: 1150px) {
+  .header h1 {
+    font-size: 30pt;
+  }
+}
+
+@media (min-width: 1300px) {
+  .header h1 {
+    font-size: 35pt;
+  }
+}
+
+.underline {
+  /* color: #58427f; */
+  text-decoration: underline;
+  display: inline;
 }
 
 /* unvisited link */
@@ -93,31 +80,435 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-  color: pink;
+  color: #58427f;
   text-decoration: underline;
 }
 
 /* selected link */
 a:active {
+  color: #58427f;
   text-decoration: underline;
 }
-
-.underline {
-  text-decoration: underline;
-  display: inline;
+/* header */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-top: 30px;
+  padding-left: 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-.spacetop {
-  /* padding-right: 50px; */
-  padding-left: 50px;
-  position: relative;
-  /* display: inline-block; */
+@media (min-width: 450px) {
+  ul {
+    padding-left: 50px;
+  }
+}
+/* for projects */
+/* .three ul {
+  list-style-type: none;
+  margin: 0;
+  padding-top: 200px;
+  padding-left: 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-/* .endabout {
-  display: inline-block;
-  padding-right: 50px;
+@media (min-width: 450px) {
+  .three ul {
+    padding-left: 50px;
+  }
 } */
+
+li {
+  display: inline;
+  /* padding-left: 40px; */
+  padding-right: 25px;
+}
+
+.background {
+  background-color: #dcdee2;
+  background-size: cover;
+}
+
+/* .gridpages {
+  display: grid;
+  grid-template-columns: 3fr 4fr 2fr;
+  grid-gap: 20px;
+} */
+
+.texttitles {
+  font-family: "Maison Neue", sans-serif;
+  line-height: 1.6;
+
+  padding-left: 30px;
+  /* padding-right: 70px; */
+  color: #58427f;
+  padding-top: 100px;
+  width: 500px;
+  text-decoration: underline;
+  font-size: 8pt;
+}
+
+@media (min-width: 450px) {
+  .texttitles {
+    padding-left: 70px;
+  }
+}
+
+@media (min-width: 760px) {
+  .texttitles {
+    font-size: 9pt;
+  }
+}
+
+@media (min-width: 950px) {
+  .texttitles {
+    position: fixed;
+    padding-top: 100px;
+  }
+}
+
+@media (min-width: 1050px) {
+  .texttitles {
+    width: 500px;
+    font-size: 10pt;
+    padding-top: 132px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .texttitles {
+    width: 500px;
+    font-size: 11pt;
+  }
+}
+
+@media (min-width: 1250px) {
+  .texttitles {
+    width: 500px;
+    font-size: 12pt;
+  }
+}
+
+.medium {
+  font-family: "Maison Neue", sans-serif;
+  line-height: 1.6;
+
+  padding-left: 30px;
+  /* padding-right: 70px; */
+  color: #58427f;
+
+  /* bottom: 50; */
+  /* right: 50; */
+  width: 500px;
+  font-size: 8pt;
+}
+
+@media (min-width: 450px) {
+  .medium {
+    padding-left: 70px;
+  }
+}
+
+@media (min-width: 760px) {
+  .medium {
+    font-size: 9pt;
+  }
+}
+
+@media (min-width: 950px) {
+  .medium {
+    position: fixed;
+    padding-top: 130px;
+  }
+}
+
+@media (min-width: 1050px) {
+  .medium {
+    width: 500px;
+    font-size: 10pt;
+    padding-top: 170px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .medium {
+    width: 500px;
+    font-size: 11pt;
+  }
+}
+
+@media (min-width: 1250px) {
+  .medium {
+    width: 500px;
+    font-size: 12pt;
+  }
+}
+
+.paper {
+  font-family: "Maison Neue", sans-serif;
+  line-height: 1.6;
+
+  padding-left: 30px;
+  /* padding-right: 70px; */
+  color: #58427f;
+
+  /* bottom: 50; */
+  /* right: 50; */
+  width: 500px;
+  font-size: 8pt;
+}
+
+@media (min-width: 450px) {
+  .paper {
+    padding-left: 70px;
+  }
+}
+
+@media (min-width: 760px) {
+  .paper {
+    font-size: 9pt;
+  }
+}
+
+@media (min-width: 950px) {
+  .paper {
+    position: fixed;
+    padding-top: 160px;
+  }
+}
+
+@media (min-width: 1050px) {
+  .paper {
+    width: 500px;
+    font-size: 10pt;
+    padding-top: 200px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .paper {
+    width: 500px;
+    font-size: 11pt;
+  }
+}
+
+@media (min-width: 1250px) {
+  .paper {
+    width: 500px;
+    font-size: 12pt;
+  }
+}
+
+.year {
+  font-family: "Maison Neue", sans-serif;
+  line-height: 1.6;
+
+  padding-left: 30px;
+  /* padding-right: 70px; */
+  color: #58427f;
+
+  /* bottom: 50; */
+  /* right: 50; */
+  width: 500px;
+  font-size: 8pt;
+}
+
+@media (min-width: 450px) {
+  .year {
+    padding-left: 70px;
+  }
+}
+
+@media (min-width: 760px) {
+  .year {
+    font-size: 9pt;
+  }
+}
+
+@media (min-width: 950px) {
+  .year {
+    position: fixed;
+    padding-top: 190px;
+  }
+}
+
+@media (min-width: 1050px) {
+  .year {
+    width: 500px;
+    font-size: 10pt;
+    padding-top: 230px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .year {
+    width: 500px;
+    font-size: 11pt;
+  }
+}
+
+@media (min-width: 1250px) {
+  .year {
+    width: 500px;
+    font-size: 12pt;
+  }
+}
+
+.format {
+  font-family: "Maison Neue", sans-serif;
+  line-height: 1.6;
+
+  padding-left: 30px;
+  /* padding-right: 70px; */
+  color: #58427f;
+
+  /* bottom: 50; */
+  /* right: 50; */
+  width: 500px;
+  font-size: 8pt;
+}
+
+@media (min-width: 450px) {
+  .format {
+    padding-left: 70px;
+  }
+}
+@media (min-width: 760px) {
+  .format {
+    font-size: 9pt;
+  }
+}
+
+@media (min-width: 950px) {
+  .format {
+    position: fixed;
+    padding-top: 220px;
+  }
+}
+
+@media (min-width: 1050px) {
+  .format {
+    width: 500px;
+    font-size: 10pt;
+    padding-top: 260px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .format {
+    width: 500px;
+
+    font-size: 11pt;
+  }
+}
+
+@media (min-width: 1250px) {
+  .format {
+    width: 500px;
+    font-size: 12pt;
+  }
+}
+
+.textleft {
+  font-family: "Maison Neue", sans-serif;
+  line-height: 1.6;
+
+  padding-top: 30px;
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto; */
+  padding-left: 30px;
+  padding-right: 30px;
+  /* padding-right: 70px; */
+  color: #58427f;
+
+  /* bottom: 50; */
+  /* right: 50; */
+  /* width: 850px;  don't put width when you want the text to shrink on its own*/
+  font-size: 8pt;
+}
+
+@media (min-width: 450px) {
+  .textleft {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+
+@media (min-width: 760px) {
+  .textleft {
+    font-size: 9pt;
+  }
+}
+
+@media (min-width: 950px) {
+  .textleft {
+    width: 380px;
+    padding-right: 0px;
+    padding-top: 290px;
+    font-size: 10pt;
+    padding-left: 70px;
+    line-height: 1.6;
+    position: fixed;
+  }
+}
+
+@media (min-width: 1050px) {
+  .textleft {
+    width: 430px;
+    padding-top: 330px;
+    font-size: 10pt;
+    line-height: 1.6;
+  }
+}
+
+@media (min-width: 1150px) {
+  .textleft {
+    width: 500px;
+    font-size: 11pt;
+    line-height: 1.6;
+  }
+}
+
+@media (min-width: 1250px) {
+  .textleft {
+    width: 500px;
+    font-size: 12pt;
+  }
+}
+
+/* need z-index; */
+.textright {
+  font-family: "Maison Neue", sans-serif;
+  font-size: 6pt;
+  line-height: 1.6;
+  /* when fixed it messes up */
+  position: fixed;
+  padding-top: 150px;
+
+  /* bottom: 0; */
+  z-index: 9999;
+}
+
+.textright li {
+  display: block;
+}
+
+/* @media (min-width: 500px) {
+  .textright li {
+    bottom: 0;
+  }
+} */
+
+@media (min-width: 1150px) {
+  .textright {
+    font-size: 8pt;
+  }
+}
 
 /* styling for header/links */
 
@@ -144,18 +535,89 @@ a:active {
   /* padding-bottom: 1000px; */
 }
 
-/* for the work pages */
+.artmed {
+  width: 250px;
+  padding-bottom: 20px;
+  /* padding-left: 8px; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 95px;
+  padding-right: 20px;
+  /* padding-bottom: 50px; */
+  /* padding-bottom: 1000px; */
+}
+
+@media (min-width: 1250px) {
+  .artmed {
+    width: 340px;
+  }
+}
+
+/* for the work pages where it goes
+try commenting out the width too*/
 .artonpage {
-  width: 400px;
+  width: 280px;
 
   /* padding-left: 8px; */
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 120px;
-  padding-right: 20px;
+  padding-top: 50px;
+
   padding-bottom: 50px;
   /* padding-bottom: 1000px; */
+}
+@media (min-width: 500px) {
+  .artonpage {
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 600px) {
+  .artonpage {
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 760px) {
+  .artonpage {
+    width: 650px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 950px) {
+  .artonpage {
+    width: 400px;
+    margin-left: 125px;
+    padding-top: 100px;
+  }
+}
+
+@media (min-width: 1050px) {
+  .artonpage {
+    padding-top: 140px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .artonpage {
+    width: 450px;
+  }
+}
+
+@media (min-width: 1350px) {
+  .artonpage {
+    width: 550px;
+  }
 }
 
 .artsmall {
@@ -168,4 +630,71 @@ a:active {
   padding-top: 10px;
   padding-right: 20px;
   padding-bottom: 50px;
+}
+
+.artspace {
+  padding-bottom: 20px;
+}
+
+.box {
+  color: red;
+}
+
+@media (min-width: 950px) {
+  .box {
+    display: flex;
+  }
+}
+
+.one {
+  flex: 3 1 0;
+  /* height: 400px; */
+}
+
+.two {
+  padding-top: 0px;
+}
+
+@media (min-width: 950px) {
+  .two {
+    flex: 4 1 0;
+    padding-top: 0px;
+  }
+}
+
+.three {
+  padding-left: 0px;
+  /* padding-top: 100px; */
+}
+
+@media (min-width: 400px) {
+  .three {
+    padding-left: 290px;
+  }
+}
+
+@media (min-width: 600px) {
+  .three {
+    padding-left: 400px;
+  }
+}
+
+@media (min-width: 760px) {
+  .three {
+    padding-left: 600px;
+  }
+}
+
+@media (min-width: 950px) {
+  .three {
+    flex: 1 1 0;
+    padding-right: 80px;
+    padding-left: 0px;
+  }
+}
+
+@media (min-width: 1120px) {
+  .three {
+    padding-right: 40px;
+  }
 }
