@@ -90,7 +90,7 @@ a:active {
   text-decoration: underline;
 }
 /* header */
-ul {
+.header ul {
   list-style-type: none;
   margin: 0;
   padding-top: 30px;
@@ -101,10 +101,11 @@ ul {
 }
 
 @media (min-width: 450px) {
-  ul {
+  .header ul {
     padding-left: 50px;
   }
 }
+
 /* for projects */
 /* .three ul {
   list-style-type: none;
@@ -146,8 +147,8 @@ li {
   padding-left: 30px;
   /* padding-right: 70px; */
   color: #58427f;
-  padding-top: 100px;
-  width: 500px;
+  padding-top: 80px;
+  /* width: 500px; */
   text-decoration: underline;
   font-size: 8pt;
 }
@@ -203,7 +204,7 @@ li {
 
   /* bottom: 50; */
   /* right: 50; */
-  width: 500px;
+  /* width: 500px; */
   font-size: 8pt;
 }
 
@@ -258,7 +259,7 @@ li {
 
   /* bottom: 50; */
   /* right: 50; */
-  width: 500px;
+  /* width: 500px; */
   font-size: 8pt;
 }
 
@@ -313,7 +314,7 @@ li {
 
   /* bottom: 50; */
   /* right: 50; */
-  width: 500px;
+  /* width: 500px; */
   font-size: 8pt;
 }
 
@@ -368,7 +369,7 @@ li {
 
   /* bottom: 50; */
   /* right: 50; */
-  width: 500px;
+  /* width: 500px; */
   font-size: 8pt;
 }
 
@@ -488,10 +489,34 @@ li {
   line-height: 1.6;
   /* when fixed it messes up */
   position: fixed;
-  padding-top: 150px;
+  padding-top: 550px;
 
   /* bottom: 0; */
   z-index: 9999;
+}
+
+.textright ul {
+  list-style-type: none;
+  margin: 0;
+  padding-top: 30px;
+  padding-left: 30px;
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+@media (min-width: 450px) {
+  .textright ul {
+    padding-left: 50px;
+    top: 0;
+  }
+}
+
+@media (min-width: 450px) {
+  .textright ul {
+    padding-left: 50px;
+  }
 }
 
 .textright li {
@@ -504,6 +529,18 @@ li {
   }
 } */
 
+/* @media (min-width: 400px) {
+  .textright li {
+      position: fixed;
+  }
+}
+
+@media (min-width: 400px) {
+  .textright {
+      position: fixed;
+  }
+} */
+
 @media (min-width: 1150px) {
   .textright {
     font-size: 8pt;
@@ -511,6 +548,93 @@ li {
 }
 
 /* styling for header/links */
+
+/* for the largest flexbox @1000-to make 4 column*/
+
+.boxmedflex {
+  display: flex;
+}
+
+.onemedflex {
+  flex: 1 1 0;
+}
+
+.twomedflex {
+  flex: 2 1 0;
+}
+
+.threemedflex {
+  flex: 1 1 0;
+}
+
+.boxhome {
+  padding-top: 100px;
+  /* display: flex; */
+}
+
+@media (min-width: 1000px) {
+  .boxhome {
+    display: flex;
+  }
+}
+
+/* @1250 is the next break point
+then @1000*/
+
+.onehome {
+  flex: 2 1 0;
+  /* height: 400px; */
+  padding-left: 50px;
+}
+
+@media (min-width: 1370px) {
+  .onehome {
+    padding-left: 50px;
+  }
+}
+
+.twohome {
+  flex: 3 1 0;
+  padding-left: 20px;
+}
+
+@media (min-width: 1370px) {
+  .twohome {
+    padding-left: 50px;
+  }
+}
+
+.threehome {
+  flex: 4 1 0;
+  padding-left: 20px;
+}
+
+@media (min-width: 1370px) {
+  .threehome {
+    padding-left: 50px;
+  }
+}
+
+.fourhome {
+  flex: 2 1 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* @media (min-width: 1000px) {
+  .fourhome {
+    flex: 2 1 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+} */
+
+@media (min-width: 1370px) {
+  .fourhome {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
 
 .gridhome {
   display: grid;
@@ -523,7 +647,7 @@ li {
 }
 
 .art {
-  width: 240px;
+  width: 190px;
   padding-bottom: 30px;
   /* padding-left: 8px; */
   display: block;
@@ -535,6 +659,13 @@ li {
   /* padding-bottom: 1000px; */
 }
 
+@media (min-width: 1250px) {
+  .art {
+    width: 240px;
+  }
+}
+
+/* not used on homepage */
 .artmed {
   width: 250px;
   padding-bottom: 20px;
@@ -554,6 +685,29 @@ li {
   }
 }
 
+.artlarge {
+  width: 300px;
+  padding-bottom: 20px;
+  /* padding-left: 8px; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-right: 20px;
+}
+
+@media (min-width: 1050px) {
+  .artlarge {
+    width: 350px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .artlarge {
+    width: 400px;
+  }
+}
+
 /* for the work pages where it goes
 try commenting out the width too*/
 .artonpage {
@@ -563,7 +717,7 @@ try commenting out the width too*/
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 50px;
+  padding-top: 40px;
 
   padding-bottom: 50px;
   /* padding-bottom: 1000px; */
@@ -621,7 +775,7 @@ try commenting out the width too*/
 }
 
 .artsmall {
-  width: 150px;
+  width: 120px;
   padding-bottom: 30px;
   /* padding-left: 8px; */
   display: block;
@@ -630,6 +784,12 @@ try commenting out the width too*/
   padding-top: 10px;
   padding-right: 20px;
   padding-bottom: 50px;
+}
+
+@media (min-width: 1250px) {
+  .artsmall {
+    width: 150px;
+  }
 }
 
 .artspace {
@@ -664,10 +824,10 @@ try commenting out the width too*/
 
 .three {
   padding-left: 0px;
-  /* padding-top: 100px; */
+  bottom: 0;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 450px) {
   .three {
     padding-left: 290px;
   }
