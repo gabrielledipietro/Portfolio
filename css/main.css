@@ -815,7 +815,8 @@ try commenting out the width too*/
   padding-top: 40px;
 
   padding-bottom: 50px;
-  /* padding-bottom: 1000px; */
+  /* padding-bottom: 1000px;
+  coding*/
 }
 @media (min-width: 500px) {
   .artonpage {
