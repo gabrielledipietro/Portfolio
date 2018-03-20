@@ -827,7 +827,7 @@ try commenting out the width too*/
 }
 @media (min-width: 600px) {
   .artonpage {
-    width: 500px;
+    width: 450px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -836,7 +836,7 @@ try commenting out the width too*/
 
 @media (min-width: 760px) {
   .artonpage {
-    width: 650px;
+    width: 550px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -868,7 +868,7 @@ try commenting out the width too*/
     width: 550px;
   }
 }
-
+/* used but the posters were not center to get them in center i have a gray background on each image */
 .posteronpage {
   width: 250px;
 
@@ -911,6 +911,7 @@ try commenting out the width too*/
   .posteronpage {
     width: 350px;
     margin-left: 125px;
+
     /* padding-top: 100px; */
   }
 }
@@ -930,9 +931,16 @@ try commenting out the width too*/
 @media (min-width: 1350px) {
   .posteronpage {
     width: 350px;
+
     /* padding-left: 100px; */
   }
 }
+
+.posterpad {
+  padding-left: 100px;
+}
+
+/* trying to center */
 
 .artsmall {
   width: 150px;
