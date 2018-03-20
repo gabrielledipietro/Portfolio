@@ -804,6 +804,7 @@ then @1000*/
 
 /* for the work pages where it goes
 try commenting out the width too*/
+
 .artonpage {
   width: 280px;
 
@@ -865,6 +866,71 @@ try commenting out the width too*/
 @media (min-width: 1350px) {
   .artonpage {
     width: 550px;
+  }
+}
+
+.posteronpage {
+  width: 250px;
+
+  /* padding-left: 8px; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+
+  padding-bottom: 50px;
+  /* padding-bottom: 1000px; */
+}
+@media (min-width: 500px) {
+  .posteronpage {
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 600px) {
+  .posteronpage {
+    width: 280px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 760px) {
+  .posteronpage {
+    width: 280px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 950px) {
+  .posteronpage {
+    width: 350px;
+    margin-left: 125px;
+    padding-top: 100px;
+  }
+}
+
+@media (min-width: 1050px) {
+  .posteronpage {
+    padding-top: 140px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .posteronpage {
+    width: 350px;
+  }
+}
+
+@media (min-width: 1350px) {
+  .posteronpage {
+    width: 350px;
+    /* padding-left: 100px; */
   }
 }
 
