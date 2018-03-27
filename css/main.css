@@ -10,6 +10,13 @@
 
 /* styling for header/links NEED THE z-index because the links were in the back */
 
+img {
+  color: #7e38ff;
+  font-weght: bolder;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
 .header {
   font-family: "Tiempos Headline", sans-serif;
   padding-top: 20px;
