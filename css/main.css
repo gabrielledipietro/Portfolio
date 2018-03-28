@@ -2,10 +2,11 @@
  * CSS written here will override Tachyons
  * ======================================== */
 
-/* @font-face {
+@font-face {
   font-family: "Tiempos";
-  src: url(Tiempos Headline-Semibold.otf) format("opentype");
-} */
+  src: url(../fonts/tiemposheadline-semibold.otf) format("opentype");
+}
+
 /* not doing anything at the moment */
 
 /* styling for header/links NEED THE z-index because the links were in the back */
@@ -17,7 +18,7 @@
 } */
 
 .header {
-  font-family: "Tiempos Headline", sans-serif;
+  font-family: "Tiempos", sans-serif;
   padding-top: 20px;
   color: #7e38ff;
   display: block;
@@ -74,29 +75,35 @@
 }
 
 /* unvisited link */
+
 a:link {
   color: #7e38ff;
   text-decoration: none;
 }
 
 /* visited link */
+
 a:visited {
   color: #7e38ff;
   text-decoration: underline;
 }
 
 /* mouse over link */
+
 a:hover {
   color: #58427f;
   text-decoration: underline;
 }
 
 /* selected link */
+
 a:active {
   color: #58427f;
   text-decoration: underline;
 }
+
 /* header */
+
 .header ul {
   list-style-type: none;
   margin: 0;
@@ -114,6 +121,7 @@ a:active {
 }
 
 /* for projects */
+
 /* .three ul {
   list-style-type: none;
   margin: 0;
@@ -150,7 +158,6 @@ li {
 .texttitles {
   font-family: "Maison Neue", sans-serif;
   line-height: 1.6;
-
   padding-left: 30px;
   /* padding-right: 70px; */
   color: #58427f;
@@ -204,11 +211,9 @@ li {
 .medium {
   font-family: "Maison Neue", sans-serif;
   line-height: 1.6;
-
   padding-left: 30px;
   /* padding-right: 70px; */
   color: #58427f;
-
   /* bottom: 50; */
   /* right: 50; */
   /* width: 500px; */
@@ -259,11 +264,9 @@ li {
 .paper {
   font-family: "Maison Neue", sans-serif;
   line-height: 1.6;
-
   padding-left: 30px;
   /* padding-right: 70px; */
   color: #58427f;
-
   /* bottom: 50; */
   /* right: 50; */
   /* width: 500px; */
@@ -314,11 +317,9 @@ li {
 .year {
   font-family: "Maison Neue", sans-serif;
   line-height: 1.6;
-
   padding-left: 30px;
   /* padding-right: 70px; */
   color: #58427f;
-
   /* bottom: 50; */
   /* right: 50; */
   /* width: 500px; */
@@ -369,11 +370,9 @@ li {
 .format {
   font-family: "Maison Neue", sans-serif;
   line-height: 1.6;
-
   padding-left: 30px;
   /* padding-right: 70px; */
   color: #58427f;
-
   /* bottom: 50; */
   /* right: 50; */
   /* width: 500px; */
@@ -385,6 +384,7 @@ li {
     padding-left: 70px;
   }
 }
+
 @media (min-width: 760px) {
   .format {
     font-size: 9pt;
@@ -409,7 +409,6 @@ li {
 @media (min-width: 1150px) {
   .format {
     width: 500px;
-
     font-size: 10.5pt;
   }
 }
@@ -424,7 +423,6 @@ li {
 .textleft {
   font-family: "Maison Neue", sans-serif;
   line-height: 1.6;
-
   padding-top: 30px;
   /* display: block;
   margin-left: auto;
@@ -433,7 +431,6 @@ li {
   padding-right: 30px;
   /* padding-right: 70px; */
   color: #58427f;
-
   /* bottom: 50; */
   /* right: 50; */
   /* width: 850px;  don't put width when you want the text to shrink on its own*/
@@ -490,6 +487,7 @@ li {
 }
 
 /* need z-index; */
+
 .textright {
   font-family: "Maison Neue", sans-serif;
   font-size: 6pt;
@@ -497,7 +495,6 @@ li {
   /* when fixed it messes up */
   position: fixed;
   padding-top: 550px;
-
   /* bottom: 0; */
   z-index: 9999;
 }
@@ -645,10 +642,12 @@ li {
 
 /* @1250 is the next break point
 then @1000*/
+
 /* .onehome {
   flex: 25%;
   max-width: 25%;
 } */
+
 .onehome {
   padding-left: 20px;
   padding-right: 20px;
@@ -731,7 +730,6 @@ then @1000*/
 
 .art {
   width: 200px;
-
   /* padding-left: 8px; */
   display: block;
   margin-left: auto;
@@ -776,6 +774,7 @@ then @1000*/
 }
 
 /* not used on homepage */
+
 .artmed {
   width: 250px;
   padding-bottom: 20px;
@@ -842,17 +841,16 @@ try commenting out the width too*/
 
 .artonpage {
   width: 280px;
-
   /* padding-left: 8px; */
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding-top: 40px;
-
   padding-bottom: 50px;
   /* padding-bottom: 1000px;
   coding*/
 }
+
 @media (min-width: 500px) {
   .artonpage {
     width: 400px;
@@ -861,6 +859,7 @@ try commenting out the width too*/
     margin-right: auto;
   }
 }
+
 @media (min-width: 600px) {
   .artonpage {
     width: 450px;
@@ -904,19 +903,20 @@ try commenting out the width too*/
     width: 550px;
   }
 }
+
 /* used but the posters were not center to get them in center i have a gray background on each image */
+
 .posteronpage {
   width: 250px;
-
   /* padding-left: 8px; */
   display: block;
   margin-left: auto;
   margin-right: auto;
   /* padding-top: 40px; */
-
   padding-bottom: 50px;
   /* padding-bottom: 1000px; */
 }
+
 @media (min-width: 500px) {
   .posteronpage {
     width: 250px;
@@ -925,6 +925,7 @@ try commenting out the width too*/
     margin-right: auto;
   }
 }
+
 @media (min-width: 600px) {
   .posteronpage {
     width: 280px;
@@ -947,7 +948,6 @@ try commenting out the width too*/
   .posteronpage {
     width: 350px;
     margin-left: 125px;
-
     /* padding-top: 100px; */
   }
 }
@@ -967,7 +967,6 @@ try commenting out the width too*/
 @media (min-width: 1350px) {
   .posteronpage {
     width: 350px;
-
     /* padding-left: 100px; */
   }
 }
@@ -1085,6 +1084,7 @@ video {
   width: 100%;
   height: auto;
 } */
+
 /* .videos {
   width: 250px;
 }
@@ -1107,6 +1107,7 @@ video {
   position: relative;
   height: 0;
 }
+
 .video-responsive iframe {
   left: 0;
   top: 0;
