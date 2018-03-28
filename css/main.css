@@ -7,6 +7,11 @@
   src: url(../fonts/tiemposheadline-semibold.otf);
 }
 
+@font-face {
+  font-family: "Maisonneue";
+  src: url(../fonts/maisonneue-mono.otf);
+}
+
 /* not doing anything at the moment */
 
 /* styling for header/links NEED THE z-index because the links were in the back */
@@ -156,7 +161,7 @@ li {
 } */
 
 .texttitles {
-  font-family: "Maison Neue", sans-serif;
+  font-family: "Maisonneue", sans-serif;
   line-height: 1.6;
   padding-left: 30px;
   /* padding-right: 70px; */
@@ -209,7 +214,7 @@ li {
 }
 
 .medium {
-  font-family: "Maison Neue", sans-serif;
+  font-family: "Maisonneue", sans-serif;
   line-height: 1.6;
   padding-left: 30px;
   /* padding-right: 70px; */
@@ -262,7 +267,7 @@ li {
 }
 
 .paper {
-  font-family: "Maison Neue", sans-serif;
+  font-family: "Maisonneue", sans-serif;
   line-height: 1.6;
   padding-left: 30px;
   /* padding-right: 70px; */
@@ -315,7 +320,7 @@ li {
 }
 
 .year {
-  font-family: "Maison Neue", sans-serif;
+  font-family: "Maisonneue", sans-serif;
   line-height: 1.6;
   padding-left: 30px;
   /* padding-right: 70px; */
@@ -368,7 +373,7 @@ li {
 }
 
 .format {
-  font-family: "Maison Neue", sans-serif;
+  font-family: "Maisonneue", sans-serif;
   line-height: 1.6;
   padding-left: 30px;
   /* padding-right: 70px; */
@@ -421,7 +426,7 @@ li {
 }
 
 .textleft {
-  font-family: "Maison Neue", sans-serif;
+  font-family: "Maisonneue", sans-serif;
   line-height: 1.6;
   padding-top: 30px;
   /* display: block;
@@ -489,7 +494,7 @@ li {
 /* need z-index; */
 
 .textright {
-  font-family: "Maison Neue", sans-serif;
+  font-family: "Maisonneue", sans-serif;
   font-size: 6pt;
   line-height: 1.6;
   /* when fixed it messes up */
@@ -500,7 +505,7 @@ li {
 }
 
 .projects {
-  font-family: "Maison Neue", sans-serif;
+  font-family: "Maisonneue", sans-serif;
   font-size: 9.5pt;
   line-height: 1.6;
   /* when fixed it messes up */
