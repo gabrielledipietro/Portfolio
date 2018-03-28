@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "Tiempos";
-  src: url(../fonts/tiemposheadline-semibold.otf) format("opentype");
+  src: url(../fonts/tiemposheadline-semibold.otf);
 }
 
 /* not doing anything at the moment */
