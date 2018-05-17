@@ -517,8 +517,9 @@ li {
   font-size: 9.5pt;
   line-height: 1.6;
   /* when fixed it messes up */
-  position: fixed;
+  /* position: fixed; */
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .projects ul {
