@@ -163,10 +163,10 @@ li {
 .texttitles {
   font-family: "Maisonneue", sans-serif;
   line-height: 1.6;
-  padding-left: 30px;
+  /* padding-left: 30px; */
   /* padding-right: 70px; */
   color: #58427f;
-  padding-top: 80px;
+  /* padding-top: 80px; */
   /* width: 500px; */
   text-decoration: underline;
   font-size: 8pt;
@@ -174,7 +174,7 @@ li {
 
 @media (min-width: 450px) {
   .texttitles {
-    padding-left: 70px;
+    /* padding-left: 70px; */
   }
 }
 
@@ -186,8 +186,8 @@ li {
 
 @media (min-width: 950px) {
   .texttitles {
-    position: fixed;
-    padding-top: 100px;
+    /* position: fixed; */
+    /* padding-top: 100px; */
   }
 }
 
@@ -195,7 +195,7 @@ li {
   .texttitles {
     width: 500px;
     font-size: 10pt;
-    padding-top: 132px;
+    /* padding-top: 130px; */
   }
 }
 
@@ -213,21 +213,27 @@ li {
   }
 }
 
+.medium li {
+  display: block;
+}
+
 .medium {
   font-family: "Maisonneue", sans-serif;
   line-height: 1.6;
-  padding-left: 30px;
+  padding-left: 0px;
   /* padding-right: 70px; */
   color: #58427f;
   /* bottom: 50; */
   /* right: 50; */
   /* width: 500px; */
   font-size: 8pt;
+  padding-top: 80px;
 }
 
 @media (min-width: 450px) {
   .medium {
-    padding-left: 70px;
+    /* padding-left: 70px; */
+    padding-left: 30px;
   }
 }
 
@@ -240,7 +246,7 @@ li {
 @media (min-width: 950px) {
   .medium {
     position: fixed;
-    padding-top: 130px;
+    padding-top: 90px;
   }
 }
 
@@ -248,7 +254,7 @@ li {
   .medium {
     width: 500px;
     font-size: 10pt;
-    padding-top: 170px;
+    padding-top: 120px;
   }
 }
 
@@ -432,7 +438,7 @@ li {
   /* display: block;
   margin-left: auto;
   margin-right: auto; */
-  padding-left: 50px;
+  padding-left: 40px;
   padding-right: 30px;
   /* padding-right: 70px; */
   color: #58427f;
@@ -446,12 +452,14 @@ li {
   .textleft {
     padding-left: 70px;
     padding-right: 70px;
+    padding-top: 20px;
   }
 }
 
 @media (min-width: 760px) {
   .textleft {
     font-size: 9pt;
+    padding-top: 20px;
   }
 }
 
@@ -460,7 +468,7 @@ li {
     width: 380px;
     padding-right: 0px;
     padding-top: 290px;
-    font-size: 10pt;
+    /* font-size: 10pt; */
     padding-left: 70px;
     line-height: 1.6;
     position: fixed;
@@ -470,7 +478,7 @@ li {
 @media (min-width: 1050px) {
   .textleft {
     width: 430px;
-    padding-top: 330px;
+    padding-top: 320px;
     font-size: 10pt;
     line-height: 1.6;
   }
