@@ -514,12 +514,12 @@ li {
 
 .projects {
   font-family: "Maisonneue", sans-serif;
-  font-size: 9.5pt;
+  font-size: 8pt;
   line-height: 1.6;
   /* when fixed it messes up */
   /* position: fixed; */
-  padding-top: 100px;
-  padding-bottom: 100px;
+  /* padding-top: 100px; */
+  /* padding-bottom: 100px; */
 }
 
 .projects ul {
@@ -537,8 +537,19 @@ li {
 
 .projects li {
   display: block;
-  padding-left: 70px;
+  padding-left: 30px;
+
   color: #58427f;
+}
+
+@media (min-width: 450px) {
+  .projects li {
+    padding-left: 70px;
+  }
+}
+
+.padtopprojects {
+  padding-top: 100px;
 }
 
 .textright ul {
