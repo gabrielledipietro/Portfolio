@@ -12,6 +12,11 @@
   src: url(../fonts/maison-neue-mono.otf);
 }
 
+@font-face {
+  font-family: "ital";
+  src: url(../fonts/ital.otf);
+}
+
 /* not doing anything at the moment */
 
 /* styling for header/links NEED THE z-index because the links were in the back */
@@ -506,6 +511,20 @@ li {
     width: 500px;
     font-size: 11pt;
   }
+}
+
+.ital {
+  font-family: "ital", sans-serif;
+  line-height: 1.6;
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto; */
+  /* padding-right: 70px; */
+  color: #58427f;
+  /* bottom: 50; */
+  /* right: 50; */
+  /* width: 850px;  don't put width when you want the text to shrink on its own*/
+  /* font-size: 8pt; */
 }
 
 /* need z-index; */
